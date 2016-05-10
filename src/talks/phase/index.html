@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>The Psychoacoustics of Phase</title>
+
+		<meta name="description" content="An overview of phase, what it means, and why it is important">
+		<meta name="author" content="Jon Boley">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>The Psychoacoustics of Phase</h1>
+					<p>
+						<small>Presented to AES Chicago <br/>
+						by <a href="http://jboley.com">Jon Boley</a><br/>
+						29 January, 2014</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Topics</h2>
+					<p>
+						<ul>
+							<li>The Basics</li>
+							<li>Useful Applications</li>
+							<li>A Note on Phase/Group Delay</li>
+							<li>Classic Experiments in Perception</li>
+							<li>Recent Advances in Psychoacoustics</li>
+						</ul>
+					</p>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>The Basics...</h2>
+					</section>
+
+					<section>
+						<h2>Definition of Phase</h2>
+						<p>
+							Assume we have a periodic signal (e.g., sine wave)
+							<img style="border:0px" src="media/sinwav_animation.gif"/>
+						</p>
+						<p class="fragment">The phase is simply the position<br>in degrees or radians<br>...or even Hz&times;seconds</p>
+					</section>
+
+					<section>
+						<h2>Phase Shift</h2>
+						<img style="border:0px" src="media/phaseShift.png"/>
+					</section>
+
+					<section>
+						<h2>Altering the Phase</h2>
+						<p>
+							We could...
+							<ul>
+								<li class="fragment">Start the signal at a different point<br>
+									<img style="border:0px" height="50%" width="50%" src="media/sinwav_animation.gif"/>
+								</li>
+								<li class="fragment">Hit "play" sooner/later<br/>
+									(less/more silence before starting)</li>
+								<li class="fragment">Move the loudspeaker closer to (or further from) the measurement point (distance &prop; time)</li>
+								<li class="fragment">Electronically "filter" the signal</li>
+							</ul>
+						</p>
+					</section>
+
+					<section>
+						<h2>Interference</h2>
+						<p>
+							The instantaneous pressure of 2 or more signals can interact<br>
+							(contructive & destructive interference)<br>
+							<img style="border:0px" height="100%" width="100%" src="media/WaveInterference.gif"/>
+						</p>
+					</section>
+
+					<!--section>
+						<h2>Fourier Series</h2>
+						<p>
+							<small>With a little hand-waving...</small><br/>
+							We can think of a complex signal as<br/>
+							a combination of sine waves <br/>
+							(of different amplitudes & phases)
+						</p>
+						<img src="media/Fourier_series_and_transform.gif"/>
+					</section-->
+				</section>
+
+				<section>
+
+					<section>
+						<h2>Useful Applications...</h2>
+					</section>
+
+					<section>
+						<h2>Comb Filter</h2>
+						<p>
+							<img style="border:0px" height="50%" width="50%" src="media/combFilter.png"/>
+						</p>
+						<audio controls>
+							<source src="media/handelCombs.wav" type="audio/wav">
+						</audio><br/>
+						<audio controls>
+							<source src="media/Flanging_effect.ogg" type="audio/ogg">
+						</audio>
+						<audio controls>
+							<source src="media/Phasing_effect.ogg" type="audio/ogg">
+						</audio>
+					</section>
+
+					<section>
+						<h2>General FIR Filter</h2>
+						<p>
+							e.g., to model reflections off surfaces (simple reverb)<br/>
+							<img style="border:0px" height="30%" width="30%" src="media/FIR.png"/>
+							<img class="fragment" style="border:0px" height="30%" width="30%" src="media/RoomModes.png"/>
+							<audio controls>
+								<source src="media/Reverberation_effect.ogg" type="audio/ogg">
+							</audio>
+							<ul>
+								<li class="fragment">Can be designed to achieve almost any desired frequency response</li>
+							</ul>
+						</p>
+					</section>
+
+					<section>
+						<h2>Active Noise Cancellation</h2>
+						<p>
+							<img style="border:0px" src="media/Active_Noise_Reduction.png"/>
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>A Note on Phase/Group Delay...</h2>
+						<p>
+							<img class="fragment" style="border:0px" src="media/FilterResponse.png"/>
+						</p>
+					</section>
+					<section>
+						<h2>Phase Response</h2>
+						<p>
+							<img style="border:0px" src="media/FilterPhase.png"/>
+						</p>
+					</section>
+					<section>
+						<h2>Phase/Group Delay</h2>
+						<p>
+							<img style="border:0px" src="media/FilterDelay.png"/>
+						</p>
+					</section>
+					<section>
+						<h2>Waveform Delay</h2>
+						<p>
+							(4kHz tone modulated at 500Hz)
+							<img style="border:0px" src="media/WaveformDelay.png"/>
+						</p>
+					</section>
+					<section>
+						<h2>Phase Delay -vs- Group Delay</h2>
+						<p>
+							<ul>
+								<li>Phase delay is the delay for a tone at a specific frequency</li>
+								<li class="fragment">Group delay</li>
+								<ul>
+									<li class="fragment">If phase is approximately linear, group delay can be thought of as the delay of the signal envelope</li>
+									<li class="fragment">Note: if slope of the phase response briefly turns positive, <span style="text-decoration: underline;">the group delay is negative</span> in that region...<br/>
+										but time travel does not actually occur</li>
+								</ul>
+							</ul>
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Classic Experiments in Perception...</h2>
+					</section>
+
+					<section>
+						<h2>Interaural Time Differences</h2>
+						<p>
+							<img style="border:0px" height="50%" width="50%" src="media/ITD.png"/>
+						</p>
+					</section>
+
+					<!--section>
+						<h2>Precedence Effect</h2>
+						<p>
+							<audio controls>
+								<source src="media/precedence.ogg" type="audio/ogg">
+							</audio>
+							<small>note: According to Zwicker & Fastl, the onset plays a role in localization, but the steady state response (after 50-100ms) is more important for detecting phase differences</small><br/>
+							<small>Zwicker, E., & Fastl, H. (1999). Psychoacoustics: Facts and models (Vol. 2). Berlin: Springer.</small>
+						</p>
+					</section-->
+
+					<section>
+						<h2>Critical Bands</h2>
+						<p>
+							Within a critical band, it is easier to detect AM.<br/>
+							But outside, phase doesn't matter.<br/>
+							<img style="border:0px" height="20%" width="20%" src="media/AM_FM.png"/>
+							<img style="border:0px" height="52%" width="52%" src="media/ModDetection.png"/><br/>
+							<small>Zwicker, E., Flottorp, G., & Stevens, S. S. (1957). Critical band width in loudness summation. The Journal of the Acoustical Society of America, 29, 548.</small>
+						</p>
+					</section>
+
+					<section>
+						<h2>Detecting Phase Differences</h2>
+						<p>
+							Affected by relative level & frequencies present<br/>
+							As Zwicker & Fastl note, phase changes often manifest as:
+							<ul>
+								<li class="fragment">modulated envelope</li>
+								<li class="fragment">modulated frequency</li>
+							</ul>
+						</p>
+					</section>
+
+					<section>
+						<h2>Pitch</h2>
+						<p>
+							>30 degrees offset for a single component in a harmonic complex results in a new auditory stream<br/>
+							<audio controls>
+								<source src="media/harmonics.ogg" type="audio/ogg">
+							</audio><br/>
+							<small>Kubovy, Michael, and Ray Jordan. "Tone-segregation by phase: On the phase sensitivity of the single ear." The Journal of the Acoustical Society of America66 (1979): 100.</small>
+						</p>
+					</section>
+
+					<section>
+						<h2>Binaural Pitch</h2>
+						<p>
+							Play noise in both channels,<br/>
+							but delay a narrow frequency range in one channel
+						</p>
+						<p>
+							<span style="color:blue;">Guess that tune!</span><br/>
+							<audio controls>
+								<source src="media/mario_huggins.wav" type="audio/wav">
+							</audio><br/>
+							<small>This demo only works well with headphones</small>
+						</p>
+					</section>
+
+
+				</section>
+
+
+				<section>
+					<section>
+						<h2>Recent Advances in Psychoacoustics...</h2>
+					</section>
+
+					<section>
+						<h2>Loudness</h2>
+						<p>
+							Heinz et al (2001) built a computer model to predict level discrimination at different frequencies.<br/>
+							It better predicted human performance when across-frequency neural timing was accounted for.
+						</p>
+					</section>
+
+					<section>
+						<h2>Masking</h2>
+						<p>
+							People can easily detect a tone in noise, and typical masking models do not match this ability.<br/>
+							<span class="fragment">Carney et al (2002) showed that a model that compared the phase across neighboring auditory filters can explain human performance.<br/>
+							<img style="border:0px" height="25%" width="25%" src="media/Masking.png"></span>
+						</p>
+					</section>
+
+					<section>
+						<h2>Localization</h2>
+						<p>
+							<video width="640" height="480" controls>
+								<source src="media/Jeffress.mp4" type="video/mp4">
+							</video><br/>
+							<span class="fragment">Joris et al (2006) showed that some of the internal delay may come from phase differences in the cochlea.</span>
+						</p>
+					</section>
+
+					<section>
+						<h2>Pitch</h2>
+						<p>
+							<img style="border:0px" height="50%" width="50%" src="media/Pitch.png" alt="reproduced with permission from Cedolin and Delgutte (2010)"/><br/>
+							<small>reproduced with permission from Cedolin and Delgutte (2010)</small><br/>
+							<span class="fragment">For multiple simultaneous pitches:<br/>
+							Larsen (2008) showed that neural rate is useful for F0&gt;900Hz<br/>
+							but for F0&lt;900Hz, this 'spatio-temporal' derivative is more accurate</span>
+							<aside class="notes">
+								High F0 has wider spacing between harmonics, so they are resolved
+							</aside>
+							<!--small>Loeb et al (1983); de Cheveigne and Pressnitzer (2006); Cedolin and Delgutte (2007); Larsen et al (2008); Cedolin and Delgutte (2010)</small-->
+						</p>
+					</section>
+
+					<section>
+						<h2>Speech</h2>
+						<p>
+							<ul>
+								<li>Shamma (1985) suggested that the rapid phase shifts might be important for speech perception</li>
+								<li>Heinz (2007) showed that these phase shifts could accurately encode speech buried in noise</li>
+								<li>Boley (2013) showed that cochlear nonlinearities increase the phase shift around the second formant of a vowel.  (This disappears with hearing impairment.)</li>
+							</ul>
+						</p>
+					</section>
+
+					<section>
+						<h2>Neural Phase Detectors</h2>
+						<p>
+							Neurons in the cochlear nucleus are sensitive to changes in the phase spectrum<br/>
+							... leading to improved localization?<br/>
+							<img style="border:0px" height="50%" width="50%" src="media/Gray760.png"/><br/>
+							<small>Wang, G. I., and Delgutte, B. (2012). Sensitivity of Cochlear Nucleus Neurons to Spatio-Temporal Changes in Auditory Nerve Activity, Journal of Neurophysiology, 108, 3172-3195</small>
+						</p>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>A Few Quotes...</h2>
+					</section>
+
+					<section>
+						<h2></h2>
+						<p>
+							<blockquote>The claim that the ear is "phase deaf" <br/>
+							was already suggested by Ohm [1843], <br/>
+							and Helmholtz [1863] came to the same conclusion in his tests.</blockquote>
+							<small>Laitinen, Mikko-Ville, Sascha Disch, and Ville Pulkki. "Sensitivity of Human Hearing to Changes in Phase Spectrum." Journal of the Audio Engineering Society 61.11 (2013): 860-877.</small>
+						</p>
+					</section>
+
+					<section>
+						<h2></h2>
+						<p>
+							<blockquote>Time-domain behavior... is not a serious factor, as humans are very insensitive to phase shift. Only very large group delays - larger than occur in normal loudspeaker designs - are audible, and even then normal listening room acoustics make the differences even more difficult to hear.</blockquote>
+							Floyd Toole
+						</p>
+					</section>
+
+					<section>
+						<h2></h2>
+						<p>
+							<blockquote>
+								<ol>
+									<li>Even quite small midrange phase nonlinearities can be audible on suitably chosen signals.</li>
+									<li>Audibility is far greater on headphones than on loudspeakers.</li>
+									<li>Simple acoustic signals generated anechoically display clear phase audibility on headphones.</li>
+									<li>On normal music or speech signals phase distortion appears not to be generally audible, although it was heard with 99% confidence on some recorded vocal material.</li>
+								</ol>
+							</blockquote>
+							<small>Lipshitz, Stanley P., Pocock, Mark, and Vanderkooy, John, "On the Audibility of Midrange Phase Distortion in Audio Systems,' J. Audio Eng. Soc., Vol. 30, No, 9, Sept. 1982, pp 580-595.</small>
+						</p>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h2>Conclusions</h2>
+						<p>
+						<ul>
+							<li class="fragment">Phase can be very important, and can result in very audible changes</li>
+							<li class="fragment">Phase itself can be audible, but you may have to listen very carefully</li>
+							<li class="fragment">Phase information may be an important contributor to the cocktail-party effect</li>
+						</ul>
+						</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>References</h2>
+						<small><ul>
+							<li>Boley, J. (2013). The Effects of Hearing Aid Amplification on Robust Neural Coding of Speech.  Dissertation, Purdue University.</li>
+							<li>Cedolin, L., & Delgutte, B. (2007). Spatio-temporal representation of the pitch of complex tones in the auditory nerve. In B. Kollmeier, G. Klump, V. Hohmann, U. Langemann, M. Mauermann, S. Uppenkamp, & J. Verhey (Eds.), (pp. 61-70). Berlin: Springer-Verlag.</li>
+							<li>Cedolin, L., & Delgutte, B. (2010). Spatiotemporal representation of the pitch of harmonic complex tones in the auditory nerve. Journal of Neuroscience, 30(38), 12712-12724.</li>
+							<li>Cheveign&eacute;, A. de, & Pressnitzer, D. (2006). The case of the missing delay lines: Synthetic delays obtained by cross-channel phase interaction. Journal of the Acoustical Society of America.</li>
+							<li>Deng, L., & Geisler, C. D. (1987). A composite auditory model for processing speech sounds. Journal of the Acoustical Society of America, 82(6), 2001-2012.</li>
+							<li>Heinz, M. G., Colburn, H. S., & Carney, L. H. (2001). Rate and timing cues associated with the cochlear amplifier: level discrimination based on monaural cross-frequency coincidence detection. Journal of the Acoustical Society of America, 110(4), 2065-2084.</li>
+							<li>Heinz, M. G. (2007). Spatiotemporal encoding of vowels in noise studied with the responses of individual auditory nerve fibers. In B. Kollmeier, G. Klump, V. Hohmann, U. Langemann, M. Mauermann, S. Uppenkamp, & J. Verhey (Eds.), Hearing-From Sensory Processing to Perception (pp. 107-115). Heidelberg: Springer Verlag.</li>
+						</ul></small>
+					</section>
+					<section>
+						<h2>References</h2>
+						<small><ul>
+							<li>Joris, P. X., de Sande, B. Van, Louage, D. H., & van der Heijden, M. (2006). Binaural and cochlear disparities. Proceedings of the National Academy of Sciences, 103(34), 12917-12922.</li>
+							<li>Laitinen, Mikko-Ville, Sascha Disch, and Ville Pulkki. "Sensitivity of Human Hearing to Changes in Phase Spectrum." Journal of the Audio Engineering Society 61.11 (2013): 860-877.</li>
+							<li>Larsen, E., Cedolin, L., & Delgutte, B. (2008). Pitch representations in the auditory nerve: two concurrent complex tones. Journal of Neurophysiology, 100(3), 1301-1319.</li>
+							<li>Lipshitz, Stanley P., Pocock, Mark, and Vanderkooy, John, "On the Audibility of Midrange Phase Distortion in Audio Systems,' J. Audio Eng. Soc., Vol. 30, No, 9, Sept. 1982, pp 580-595.</li>
+							<li>Loeb, G. E., White, M. W., & Merzenich, M. M. (1983). Spatial cross-correlation. A proposed mechanism for acoustic pitch perception. Biological Cybernetics, 47(3), 149-163.</li>
+							<li>Shamma, S. A. (1985). Speech processing in the auditory system. I: The representation of speech sounds in the responses of the auditory nerve. Journal of the Acoustical Society of America, 78(5), 1612-1621.</li>
+							<li>Shamma, S., & Klein, D. (2000). The case of the missing pitch templates: how harmonic templates emerge in the early auditory system. Journal of the Acoustical Society of America, 107(5 Pt 1), 2631-2644.</li>
+							<li>Wang, G. I., & Delgutte, B. (2012). Sensitivity of Cochlear Nucleus Neurons to Spatio-Temporal Changes in Auditory Nerve Activity. Journal of Neurophysiology, 108, 3172-3195.</li>
+						</ul></small>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/boley
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://jboley.com
+  * I am boley (https://keybase.io/boley) on keybase.
+  * I have a public key with fingerprint 431C AC4E FA14 7662 844F  0EAE C250 C8EF FA58 EE1A
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "431cac4efa147662844f0eaec250c8effa58ee1a",
+            "host": "keybase.io",
+            "key_id": "c250c8effa58ee1a",
+            "uid": "b7dcf2b361a386b3088b32088317f000",
+            "username": "boley"
+        },
+        "service": {
+            "hostname": "jboley.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1406904844,
+    "expire_in": 157680000,
+    "prev": "2954fa542de0fe7adb49c124397bf6ed81b9bccf380af8601735a69f6236a46d",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.23
+Comment: https://keybase.io/crypto
+
+yMHpAnicbZFdSBRrGMd3TbM2C7NCKM9Fb11kLOt87Tuzu6IiIuUhXFwIQ2mZj3d2
+p9aZbXbd1TZJDxgKkWUUVlKRXaTbTQVqQaZ58hRqX9RFSJjH0ihJNPLGTN9Z7K6b
+Gd7/8/v/n+fh+XfjGpPFPHzDnvV3vGnIPNw/U23yjHWlxYCgSbXAGQNHUeInK6oP
+6UFdUcPACRiaFHmRQTJPMiyEFMcwMoF4JFJ2QuSQLPN2DiGSB1bg10KGA8cIfAjZ
+FA1r+OFVJKz+ga9OFARWEmVKoCHJ0xwUaILjBJrCX5pkZYIgDDCEdJWvQgatBfCU
+dVaApYgiYimW6LtaPpKo20StCtuCuhbWRC2AdX84HHQatnBt0OCiSPCuJngFRZXw
+ytgQQXpI0VTgJDEphhUjkmQI6CAYvLYVoJqgoiOvYhB2FnJ4OsJogyI4knLYGbwc
+Q0mIkBHLSwLjEEmKoR2sIEMkcaTgEERRpjmClzlIkCxt56FDhhQNeQZKuH8IHVM1
+4KTxmLwPR4YUn8qHq3UE6h73VyabzBbT2pQk42gmy/r036csbUxdrrQ+a0Xjm/Pc
+x98kfUTL/93trC8ua9y0+978obK55dYrGT3+jvPzrzS67sXYr/yi5kfrMlP2fHja
+tfhwe80U82SgKKlgdmbItrCr84x3Gu4o5q7mPbi8pe2WqyH/ZvKJO+n7iix/LWS/
+zuiwfo6eTKso7VbbBvvMc66vt/M7k7+dm2ydqGrJGp156QmB7tSGkvHCgOtTweKg
+Dn46WpbOut3p2e3+fyzPt8Xn9toOfC/M7I2hnIP1o9Fclzt3NhbxlPjuD7UHD284
+NX2tByiNS+/FpjSYUTDVUPy2It5bfnrk/2zo+XHhYjzafD1gzhkBl8w7J/vKv0wM
+bN1vKWTfrQBbBxG/
+=JOBY
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/boley
+
+==================================================================

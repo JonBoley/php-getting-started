@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Jon Boley</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link href="assets/icomoon/style.css" rel="stylesheet">
+        <style>
+        	  /* Sticky footer styles
+			  -------------------------------------------------- */
+
+			  html,
+			  body {
+				height: 100%;
+				/* The html and body elements cannot have any padding or margin. */
+			  }
+
+			  /* Wrapper for page content to push down footer */
+			  #wrap {
+				min-height: 100%;
+				height: auto !important;
+				height: 100%;
+				/* Negative indent footer by it's height */
+				margin: 0 auto -60px;
+			  }
+
+			  /* Set the fixed height of the footer here */
+			  #push,
+			  #footer {
+				height: 60px;
+			  }
+			  #footer {
+				background-color: #f5f5f5;
+			  }
+
+			  /* Lastly, apply responsive CSS fixes as necessary */
+			  @media (max-width: 767px) {
+				#footer {
+				  margin-left: -20px;
+				  margin-right: -20px;
+				  padding-left: 20px;
+				  padding-right: 20px;
+				}
+			  }
+
+
+
+			  /* Custom page CSS
+			  -------------------------------------------------- */
+			  /* Not required for template or sticky footer method. */
+
+			  #wrap > .container {
+				padding-top: 60px;
+			  }
+			  .container .credit {
+				margin: 20px 0;
+			  }
+
+			  code {
+				font-size: 80%;
+      		  }
+        </style>
+        <link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+
+        <script src="assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+		<div id="wrap">
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="http://jboley.com">Jon Boley, PhD</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+							<li><a href="index.php#home"><i class="icon-home"></i>Home</a></li>
+							<li class="divider-vertical"></li>
+							<li class="active anchor"><a href="#hobbies"><i class="icon-headphones"></i>Hobbies</a></li>
+							<li class="divider-vertical"></li>
+							<li class="anchor"><a href="#quotes"><i class="icon-comment"></i>Quotes</a></li>
+							<li class="divider-vertical"></li>
+							<li class="anchor"><a href="#media"><i class="icon-camera"></i>Media</a></li>
+							<li class="divider-vertical"></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+									<li><a href="http://blog.jboley.com">Boley Beer Blog</a></li>
+									<li><a href="http://perceptualentropy.com">PerceptualEntropy.com</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+						<p class="navbar-text pull-right"><a href="http://my.jboley.com" style="color:#000000;"><i class="icon-lock"></i></a></p>
+                        <!--form class="navbar-form pull-right">
+                            <input class="span2" type="text" placeholder="Email">
+                            <input class="span2" type="password" placeholder="Password">
+                            <button type="submit" class="btn">Sign in</button>
+                        </form-->
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="home">
+
+			<div id="hobbies">
+				<h2>Hobbies</h2>
+
+				<div class="well">
+					<h4>Recent Hobbies</h4>
+					<p style="margin-left:20px;">
+						<a href="http://blog.jboley.com">
+							<img id="brewing" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/beer.png"  class="img-rounded" alt="Zach Harris, from The Noun Project" data-content="Brewing beer" rel="popover" data-placement="bottom" data-trigger="hover"/>
+						</a>
+
+						<a href="http://www.bjcp.org">
+							<img id="judging" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/judging.png" class="img-rounded" alt="from The Noun Project" data-content="Judging Beer Competitions" rel="popover" data-placement="bottom" data-trigger="hover"/>
+						</a>
+
+						<a href="http://web.ics.purdue.edu/~jdboley">
+							<img id="neuro" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/neuroscience.png" class="img-rounded" alt="from The Noun Project" data-content="Studying neuroscience" rel="popover" data-placement="bottom" data-trigger="hover"/>
+						</a>
+
+						<img id="html" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/html.png" class="img-rounded" alt="Dmitry Baranovskiy, from The Noun Project" data-content="Web programming" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+					</p>
+
+					<h4>Previous Hobbies</h4>
+					<p style="margin-left:20px;">
+
+						<img id="guitar" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/guitar.png"  class="img-rounded" alt="from The Noun Project" data-content="Playing guitar" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="locksmithing" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/locksmith.png"  class="img-rounded" alt="The Noun Project" data-content="Locksmithing" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="climbing" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/rockclimb.png"  class="img-rounded" alt="from The Noun Project" data-content="Rockclimbing" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="diving" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/scuba.png"  class="img-rounded" alt="from The Noun Project" data-content="scuba diving" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="snowboarding" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/snowboard.png"  class="img-rounded" alt="from The Noun Project" data-content="snowboarding" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="skydiving" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/skydive.png"  class="img-rounded" alt="Parachutiste, from The Noun Project" data-content="skydiving" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="martialarts" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/martial_arts.png" class="img-rounded" alt="from The Noun Project" data-content="martial arts" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="caving" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/cave.png"  class="img-rounded" alt="from The Noun Project" data-content="caving" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="rafting" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/raft.png"  class="img-rounded" alt="Stephen Robert Hemenway, from The Noun Project" data-content="rafting" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="flying" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/airplane.png"  class="img-rounded" alt="Marc Serre, from The Noun Project" data-content="flying" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="kiteboard" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/kiteboard.png"  class="img-rounded" alt="Cl�ment Alexandre, from The Noun Project" data-content="kiteboarding" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="radio" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/radio.png"  class="img-rounded" alt="John Caserta, from The Noun Project" data-content="amateur radio" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="cooking" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/cook.png"  class="img-rounded" alt="from The Noun Project" data-content="cooking" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="fencing" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/sword.png"  class="img-rounded" alt="from The Noun Project" data-content="fencing" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="golfing" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/golf.png"  class="img-rounded" alt="from The Noun Project" data-content="golfing" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="biking" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/motorcycle.png"  class="img-rounded" alt="from The Noun Project" data-content="biking" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="surfing" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/surf.png"  class="img-rounded" alt="from The Noun Project" data-content="surfing" rel="popover" data-placement="bottom" data-trigger="hover"/>
+					</p>
+
+					<h4>Hobbies I'd Like to Try</h4>
+					<p style="margin-left:20px;">
+						<img id="windsurfing" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/windsurf.png"  class="img-rounded" alt="from The Noun Project" data-content="windsurfing" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="hanggliding" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/hang_glide.png"  class="img-rounded" alt="from The Noun Project" data-content="hang gliding" rel="popover" data-placement="bottom" data-trigger="hover"/>
+
+						<img id="sailing" data-toggle="tooltip" style="width:50px; height:50px;" src="i/nounproject/sail.png"  class="img-rounded" alt="TIRO, from The Noun Project" data-content="sailing" rel="popover" data-placement="bottom" data-trigger="hover"/>
+					</p>
+
+				</div><!--class="well"-->
+			</div><!--id="hobbies"-->
+
+			<div id="quotes">
+				<h2>Quotes</h2>
+
+				<div class="well">
+					<ul class="nav nav-tabs" id="quoteTabs">
+						<li class="active"><a href="#qotd" data-toggle="tab">Quotes of the Day</a></li>
+						<li><a href="#favorites" data-toggle="tab">Favorites</a></li>
+						<li><a href="#others" data-toggle="tab">Other Good Ones</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div class="tab-pane fade active in" id="qotd">
+							<script language="javascript" src="http://www.quotationspage.com/data/qotd.js"></script>
+						</div>
+						<div class="tab-pane fade" id="favorites">
+							<p align="justify">
+								"I always remember an epitaph which is in the cemetery at Tombstone, Arizona. It says: 'Here lies Jack Williams. He done his damnedest.' I think that is the greatest epitaph a man can have - When he gives everything that is in him to do the job he has before him. That is all you can ask of him and that is what I have tried to do." -Harry S. Truman
+							</p>
+							<p align="justify">
+								"After I'm dead I'd rather have people ask why I have no monument than why I have one." -Cato the Elder (234-149 B.C.)
+							</p>
+							<p align="justify">
+								"A child of five would understand this. Send someone to fetch a child of five." -Groucho Marx
+							</p>
+							<p align="justify">
+								"Man is the only animal that learns by being hypocritical. He pretends to be polite and then, eventually, he becomes polite." -Jean Kerr
+							</p>
+							<p align="justify">
+								"They may forget what you said, but they will never forget how you made them feel." -Carl W. Buechner
+							</p>
+							<p align="justify">
+								"There is nothing more notable in Socrates than that he found time, when he was an old man, to learn music and dancing, and thought it time well spent." -Michel de Montaigne
+							</p>
+							<p align="justify">
+								"There is no human reason why a child should not admire and emulate his teacher's ability to do sums, rather than the village bum's ability to whittle sticks and smoke cigarettes. The reason why the child does not is plain enough - the bum has put himself on an equality with him and the teacher has not." -Floyd Dell
+							</p>
+							<p align="justify">
+								"I have never let my schooling interfere with my education." -Mark Twain
+							</p>
+						</div><!--favorites-->
+						<div class="tab-pane fade" id="others">
+							<p align="justify">
+								"It is of interest to note that while some dolphins are reported to have learned English -- up to fifty words used in correct context -- no human being has been reported to have learned dolphinese." -Carl Sagan
+							</p>
+							<p align="justify">
+								"If you would be a real seeker after truth, it is necessary that at least once in your life you doubt, as far as possible, all things." -Rene Descartes
+							</p>
+							<p align="justify">
+								"Men stumble over the truth from time to time, but most pick themselves up and hurry off as if nothing happened." -Winston Churchill
+							</p>
+							<p align="justify">
+								"These are the times that try men's souls. The summer soldier and the sunshine patriot will, in this crisis, shrink from the service of their country; but he that stands it now, deserves the love and thanks of men and women." -Thomas Paine
+							</p>
+							<p align="justify">
+								"The only normal people are the ones you don't know very well." -Joe Ancis
+							</p>
+							<p align="justify">
+								"The scientific theory I like best is that the rings of Saturn are composed entirely of lost airline luggage." -Mark Russell
+							</p>
+							<p align="justify">
+								"What's another word for Thesaurus?" -Steven Wright
+							</p>
+							<p align="justify">
+								"Next to knowing when to seize an opportunity, the most important thing in life is to know when to forego an advantage." -Benjamin Disraeli
+							</p>
+							<p align="justify">
+								"When I have a kid, I wanna put him in one of those strollers for twins, then run around the mall looking frantic." -Steven Wright
+							</p>
+							<p align="justify">
+								"I do not feel obliged to believe that the same God who has endowed us with sense, reason, and intellect has intended us to forgo their use." -Galileo Galilei
+							</p>
+							<p align="justify">
+								"The best way to cheer yourself is to try to cheer someone else up." -Mark Twain
+							</p>
+							<p align="justify">
+								"If we are going to stick to this damned quantum-jumping, then I regret that I ever had anything to do with quantum theory." -Erwin Schrodinger
+							</p>
+							<p align="justify">
+								"The great thing is the start - to see an opportunity for service, and to start doing it, even though in the beginning you serve but a single customer - and him for nothing." -Robert Collier
+							</p>
+							<p align="justify">
+								"If your morals make you dreary, depend on it , they are wrong." -Robert Louis Stevenson
+							</p>
+							<p align="justify">
+								"An intellectual snob is someone who can listen to the William Tell Overture and not think of The Lone Ranger." -Dan Rather
+							</p>
+							<p align="justify">
+								"The failure of the mind in old age is often less the results of natural decay, than of disuse. Ambition has ceased to operate; contentment bring indolence, and indolence decay of mental power, ennui, and sometimes death. Men have been known to die, literally speaking, of disease induced by intellectual vacancy." -Sir B. Brodie
+							</p>
+							<p align="justify">
+								"The palest ink is better than the best memory." -Chinese Proverb
+							</p>
+							<p align="justify">
+								"A great leader never sets himself above his followers except in carrying responsibilities." -Jules Ormont
+							</p>
+							<p align="justify">
+								"Those who do not study are only cattle dressed up in men's clothes." -Chinese Proverb
+							</p>
+							<p align="justify">
+								"I stopped believing in Santa Claus when my mother took me to see him in a department store, and he asked for my autograph." -Shirley Temple
+							</p>
+							<p align="justify">
+								"Tell me and I'll forget; show me and I may remember; involve me and I'll understand." -Chinese Proverb
+							</p>
+							<p align="justify">
+								"There is a tide in the affairs of men,<br>
+								Which, taken at the flood, leads on to fortune;<br>
+								Omitted, all the voyage of their life<br>
+								Is bound in shallows and in miseries."<br>
+								William Shakespeare (1564 - 1616), Julius Caesar
+							</p>
+							<p align="justify">
+								"Insisting on perfect safety is for people who don't have the balls to live in the real world."- Mary Shafer, NASA Ames Dryden
+							</p>
+							<p align="justify">
+								"The illiterate of the future will not be the person who cannot read. It will be the person who does not know how to learn." -Alvin Toffler
+							</p>
+							<p align="justify">
+								"A youth is to be regarded with respect. How do you know that his future will not be equal to our present?" -Confucius
+							</p>
+							<p align="justify">
+								"Nietzsche was stupid and abnormal." -Leo Tolstoy
+							</p>
+							<p align="justify">
+								"I don't like that man. I must get to know him better." -Abraham Lincoln
+							</p>
+							<p align="justify">
+								"Consider the postage stamp: its usefulness consists in the ability to stick to one thing till it gets there." -Josh Billings
+							</p>
+							<p align="justify">
+								"Getters don't get - givers get." -Eugene Benge
+							</p>
+							<p align="justify">
+								"The quality of mercy is not strain'd, <br>
+								It droppeth as the gentle rain from heaven <br>
+								Upon the place beneath. It is twice blest: <br>
+								It blesseth him that gives and him that takes. <br>
+								'T is mightiest in the mightiest: it becomes <br>
+								The throned monarch better than his crown; <br>
+								His sceptre shows the force of temporal power, <br>
+								The attribute to awe and majesty, <br>
+								Wherein doth sit the dread and fear of kings; <br>
+								But mercy is above this sceptred sway, <br>
+								It is enthroned in the hearts of kings, <br>
+								It is an attribute to God himself; <br>
+								And earthly power doth then show likest God's, <br>
+								When mercy seasons justice. Therefore, Jew, <br>
+								Though justice be thy plea, consider this, <br>
+								That in the course of justice none of us <br>
+								Should see salvation: we do pray for mercy; <br>
+								And that same prayer doth teach us all to render <br>
+								The deeds of mercy."<br>
+								William Shakespeare, "The Merchant of Venice", Act 4 scene 1
+							</p>
+							<p align="justify">
+								"I prefer tongue-tied knowledge to ignorant loquacity." -Marcus Tullius Cicero
+							</p>
+							<p align="justify">
+								"Smile, it is the key that fits the lock of everybody's heart." -Anthony J. D'Angelo, The College Blue Book
+							</p>
+							<p align="justify">
+								"Those who are clever, who have a Brain, never understand anything." -Pooh's Little Instruction Book, inspired by A. A. Milne
+							</p>
+							<p align="justify">
+								"We don't know a millionth of one percent about anything." -Thomas A. Edison
+							</p>
+							<p align="justify">
+								"Be careful about reading health books. You may die of a misprint." -Mark Twain
+							</p>
+							<p align="justify">
+								"So far as I can remember, there is not one word in the Gospels in praise of intelligence." -Bertrand Russell
+							</p>
+							<p align="justify">
+								"How could I lose to such an idiot?" -A shout from chess grandmaster Aaron Nimzovich
+							</p>
+						</div><!--others-->
+					</div><!--tab-content-->
+				</div><!--class="well"-->
+			</div><!--id="quotes"-->
+
+			<div id="media">
+				<h2>Media</h2>
+
+				<div class="well">
+
+
+					<ul class="thumbnails">
+						<li>
+							<div class="thumbnail">
+								<img data-src="holder.js/150x300" style="width:150px; height:300px;" src="pics/climbing1.jpg"  class="img-rounded" />
+								 <!--img data-src="holder.js/200x200" src="pics/climbing1.jpg" class="img-rounded"/-->
+								 <p>Rock Climbing</p>
+							</div>
+						</li>
+						<li>
+							<div class="thumbnail">
+								<img data-src="holder.js/225x300" style="width:225px; height:300px;" src="pics/jon_rappel.jpg"  class="img-rounded" />
+								<p>Caving</p>
+							</div>
+						</li>
+						<li>
+							<div class="thumbnail">
+								 <img data-src="holder.js/200x150" style="width:200px; height:150px;" src="pics/DragerJon3.jpg" class="img-rounded"/>
+								 <p>SCUBA diving</p>
+							</div>
+						</li>
+						<li>
+							<div class="thumbnail">
+								 <img data-src="holder.js/190x150" style="width:190px; height:150px;" src="pics/kiteboard.jpg" class="img-rounded"/>
+								 <p>Kiteboarding</p>
+							</div>
+						</li>
+						<li>
+							<div class="thumbnail">
+								 <img data-src="holder.js/200x150" style="width:200px; height:150px;" src="pics/ice.jpg" class="img-rounded"/>
+								 <p>Ice climbing</p>
+							</div>
+						</li>
+
+					</ul>
+
+					<embed
+						width="320" height="240"
+						src="http://www.youtube.com/v/Dj4kEupTkjQ"
+						type="application/x-shockwave-flash">
+					</embed>
+
+				</div><!--class="well"-->
+			</div><!--id="media"-->
+
+
+
+            <div id="push"></div>
+		</div><!--class="container"-->
+
+		<div id="footer">
+			<div class="container">
+				<p class="muted credit">&copy; Jon Boley 2013.</p>
+			</div>
+    	</div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-38494371-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+		<script>
+			var offset = 48;
+
+			$('.anchor a').click(function(event) {
+				event.preventDefault();
+				$($(this).attr('href'))[0].scrollIntoView();
+				scrollBy(0, -offset);
+			});
+		</script>
+
+		<script>
+			$(function () { $("#brewing").popover();});
+			$(function () { $("#judging").popover();});
+			$(function () { $("#neuro").popover();});
+			$(function () { $("#html").popover();});
+			$(function () { $("#guitar").popover();});
+			$(function () { $("#locksmithing").popover();});
+			$(function () { $("#climbing").popover();});
+			$(function () { $("#diving").popover();});
+			$(function () { $("#snowboarding").popover();});
+			$(function () { $("#skydiving").popover();});
+			$(function () { $("#martialarts").popover();});
+			$(function () { $("#caving").popover();});
+			$(function () { $("#rafting").popover();});
+			$(function () { $("#flying").popover();});
+			$(function () { $("#kiteboard").popover();});
+			$(function () { $("#radio").popover();});
+			$(function () { $("#cooking").popover();});
+			$(function () { $("#fencing").popover();});
+			$(function () { $("#golfing").popover();});
+			$(function () { $("#biking").popover();});
+			$(function () { $("#surfing").popover();});
+			$(function () { $("#windsurfing").popover();});
+			$(function () { $("#hanggliding").popover();});
+			$(function () { $("#sailing").popover();});
+		</script>
+
+	</div><!--id="wrap"-->
+    </body>
+</html>
